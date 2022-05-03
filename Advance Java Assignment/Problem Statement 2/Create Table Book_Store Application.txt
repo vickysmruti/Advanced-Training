@@ -1,0 +1,26 @@
+CREATE TABLE `vickydb`.`Books` (
+  `Book_Id` INT NOT NULL,
+  `Book_Name` VARCHAR(45) NULL,
+  `Author` VARCHAR(45) NULL,
+  `Price` DOUBLE NULL,
+  PRIMARY KEY (`Book_Id`));
+
+
+CREATE TABLE `vickydb`.`Order_Details` (
+  `Order_Id` INT NOT NULL,
+  `Book_Id` INT NULL,
+  `Cust_Name` VARCHAR(45) NULL,
+  `Phone_No` VARCHAR(45) NULL,
+  `Address` VARCHAR(45) NULL,
+  `Order_Date` DATE NULL,
+  `Quantity` INT NULL,
+  PRIMARY KEY (`Order_Id`));
+
+
+CREATE TABLE `vickydb`.`Users` (
+  `first_name` VARCHAR(45) NULL,
+  `address` VARCHAR(45) NULL,
+  `email` VARCHAR(45) NULL,
+  `user_name` VARCHAR(45) NULL,
+  `password` VARCHAR(45) NULL,
+  `registration_date` VARCHAR(45) NULL);
